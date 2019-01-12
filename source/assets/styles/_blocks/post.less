@@ -10,6 +10,13 @@
   }
 }
 
+.next-post {
+  text-align: center;
+  .post-title {
+    display: inline-block;
+  }
+}
+
 .post-content {
   h1, h2, h3, h4, h5, h6 {
     padding: 4px 0;
@@ -18,8 +25,8 @@
   }
 
   a {
-    color: var(--c-base-purple);
-    transition: all 0.3s;
+    font-weight: 600;
+    background: linear-gradient(180deg,transparent 70%,rgba(101,125,225,.4) 0);
   }
   img {
     display: block;
@@ -90,6 +97,9 @@
     margin: 1rem 0;
     display: block;
     overflow-x: auto;
+  }
+  thead {
+    background: #dfe4e7;
   }
   tr {
     border-top: 1px solid #dfe2e5;
