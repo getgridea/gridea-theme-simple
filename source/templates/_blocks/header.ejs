@@ -1,0 +1,25 @@
+<div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <img class="avatar" src="/frontend/media/logo.png" alt="" width="32px" height="32px">
+      <a href="#">
+        <h1 class="site-title">Hve Notes</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      <a class="menu purple-link" href="#">首 页</a>
+      <a class="menu purple-link" href="#">关 于</a>
+      <a class="menu purple-link" href="#">Github</a>
+    </div>
+  </div>
+</transition>

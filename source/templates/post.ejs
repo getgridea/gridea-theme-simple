@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('./_blocks/head') %>
+  </head>
+  <body>
+    <div id="app" class="main">
+      <%- include('./_blocks/header') %>
+
+      <div class="content-container">
+        <div class="post-detail">
+          <h2 class="post-title">一个非著名前端开发者的2018</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2019-10-10</span>
+            <span>
+              <i class="icon-pricetags-outline"></i>
+              <a href="#">年终总结</a>
+            </span>
+          </div>
+          <div class="post-content">
+            <p>铛铛铛，喜大普奔，Hve Notes  主页上线啦！ </p>
+            <p>📢小二，上链接<br><a href="http://hvenotes.fehey.com/">Hve Notes</a></p>
+            <p>主页网站 用了 <a href="https://vuepress.vuejs.org/zh/">Vuepress</a> 快速搭建，搭配了 <a href="http://fehey.com/live/">Live UI</a>  一起食用。、</p>
+            <p>你可以再这里找到文档，快速上手 Hve Notes。</p>
+            <p>未来，即将丰富的主题、备份同步等功能都将更新在文档中。</p>
+            <p>😘 Enjoy~</p>
+            <p>让我测试一下代码和引用</p>
+<blockquote>
+<p>这里是引用内容，实际效果怎么样呢？<br>这里也是引用内容哦</p>
+</blockquote>
+<p>代码片段</p>
+<pre><code class="language-javascript hljs">computed: {
+  filteredUsers: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">var</span> <span class="hljs-keyword">self</span> = this
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">self</span>.users.filter(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(user)</span> </span>{
+      <span class="hljs-keyword">return</span> user.name.indexOf(<span class="hljs-keyword">self</span>.searchQuery) !== <span class="hljs-number">-1</span>
+    })
+  }
+}</code></pre>
+            <h2>二级标题</h2>
+            <p>内容</p>
+            <h3>三级标题</h3>
+            <p>内容</p>
+            <img src="/frontend/media/logo.png" alt="">
+            <h4>四级标题</h4>
+            <p>内容</p>
+            <table>
+            <thead>
+            <tr>
+            <th>一个普通标题</th>
+            <th>一个普通标题</th>
+            <th>一个普通标题</th>
+            </tr>
+            </thead>
+            <tbody><tr>
+            <td>短文本</td>
+            <td>中等文本</td>
+            <td>稍微长一点的文本</td>
+            </tr>
+            <tr>
+            <td>稍微长一点<code>hve-notes</code>的文本</td>
+            <td>短文本</td>
+            <td>中等文本</td>
+            </tr>
+            </tbody></table>
+          </div>
+        </div>
+      </div>
+
+      <%- include('./_blocks/footer') %>
+
+    </div>
+    <%- include('./_blocks/scripts') %>
+  </body>
+</html>
