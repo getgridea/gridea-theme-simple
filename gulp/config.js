@@ -79,15 +79,6 @@ const config = {
       outputStyle: 'expanded',
     },
   },
-  fonts: {
-    src: `${path.src}assets/fonts/fonts.css`,
-    dest: `${path.dest}frontend/styles/`,
-    watch: `${path.src}assets/fonts/*.css`,
-    base64: {
-      extensions: ['woff'],
-      maxImageSize: 1024 * 1024 * 10,
-    },
-  },
   html: {
     src: `${path.src}templates/*.ejs`,
     dest: path.dest,
@@ -95,14 +86,6 @@ const config = {
       `${path.src}**/*.ejs`,
       `${path.src}modules/**/*.ejs`,
     ],
-  },
-  scripts: {
-    src: {
-      main: `${path.src}assets/scripts/index.js`,
-      all: `${path.src}assets/scripts/**/*.js`,
-    },
-    dest: `${path.dest}frontend/scripts/`,
-    watch: `${path.src}assets/scripts/**/*.js`,
   },
   images: {
     src: `${path.src}assets/media/**/*`,
