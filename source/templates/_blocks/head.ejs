@@ -1,14 +1,57 @@
+<%
+  // 模拟数据
+  var themeConfig =
+   { archivesPageSize: 50,
+     dateFormat: 'YYYY-MM-DD',
+     footerInfo:
+      'Powered by <a href="https://github.com/hve-notes/hve-notes" target="_blank" style="color: #f1f3f5;">Hve Notes</a>',
+     postPageSize: 10,
+     postUrlFormat: 'SLUG',
+     showFeatureImage: true,
+     siteDescription: '温故而知新',
+     siteName: 'Hve Notes',
+     tagUrlFormat: 'SHORT_ID',
+     themeName: 'notes',
+     domain: '/Users/haoeryou/Documents/hve-notes/output' }
+  var commentSetting =
+   { commentPlatform: 'gitalk',
+     disqusSetting:
+      { api: '',
+        apikey:
+         'Dme6Hy8bOI2wogDrC0DAKkwNlkXKhSMManrEUlpfYQR8d1pMd8rhay6ZobUtdY8V',
+        shortname: 'hve-notes' },
+     gitalkSetting:
+      { clientId: 'd92da8e33c82c229d9b4',
+        clientSecret: '861947e68c7afff00e919fbf7dff8a105c365d33',
+        owner: 'EryouHao',
+        repository: 'EryouHao.github.io' },
+     showComment: true }
+  var siteTitle = themeConfig.siteName
+%>
 
 <meta charset="utf-8" >
 
-<title></title>
-<meta name="description" content="">
+<title><%= siteTitle %></title>
+<meta name="description" content="<%= themeConfig.siteDescription %>">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <link  rel="icon" type="image/png" href="/frontend/media/favicon/favicon-32x32.png">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" type="text/css" href="./frontend/styles/main.css">
+
+<% if (typeof commentSetting !== 'undefined' && commentSetting.showComment) { %>
+  <% if (commentSetting.commentPlatform === 'gitalk') { %>
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  <% } %>
+
+  <% if (commentSetting.commentPlatform === 'disqus') { %>
+    <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css" />
+  <% } %>
+<% } %>
+
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 

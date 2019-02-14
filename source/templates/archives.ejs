@@ -80,27 +80,25 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          <% posts.forEach(function(post) { %>
-            <article class="post-item">
-              <div class="left">
-                <a href="<%= post.link %>">
-                  <h2 class="post-title"><%= post.title %></h2>
-                </a>
-                <div class="post-date">
-                  <%= post.dateFormat %>
-                </div>
-                <div class="post-abstract">
-                  <%- post.abstract %>
-                </div>
-              </div>
-              <% if (themeConfig.showFeatureImage && post.feature) { %>
-                <a class="right" href="<%= post.link %>">
-                  <div class="feature-container" style="background-image: url('<%= post.feature %>')">
-                  </div>
-                </a>
-              <% } %>
-            </article>
-          <% }); %>
+          <% let years = []; posts.forEach((item) => { const year = item.date.substring(0, 4); if (!years.includes(year)) { years.push(year); } }); %>
+
+          <h2 class="archives-title">文章归档</h2>
+          <div class="archives-container">
+            <% years.forEach(function(year) { %>
+              <h2 class="year" data-aos="fade-in" data-aos-delay="500"><%- year %></h2>
+              <% posts.forEach(function(post) { %>
+                <%if (post.date.indexOf(year) !== -1) { %>
+                  <article class="post">
+                    <a href="<%= post.link %>">
+                      <h2 class="post-title">
+                        <%= post.title %>
+                      </h2>
+                    </a>
+                  </article>
+                <% } %>
+              <% }); %>
+            <% }); %>
+          </div>
 
           <div class="pagination-container">
             <% if (!pagination.prev) { %>

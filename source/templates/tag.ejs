@@ -1,28 +1,121 @@
+<%
+  // 模拟数据
+  var tag = { name: '年终总结', used: true, slug: 'nian-zhong-zong-jie' }
+  var posts =
+   [ { content:
+        '<p>作为一个技术人，你是否喜欢创作，或是怀念过往又或是畅想未来，或是总结技术又或是记录生活？</p>\n<!-- more -->\n<p>诚然，现在有很多平台或技术社区，里面有很多人每天都在分享，或是读书笔记又或是项目实践，或是面试经历又或是年终总结。</p>\n<p>技术社区或平台固然很热闹，但是有一些东西，又想记录在某个地方，只给有缘人。所以这正是个人博客存在的原因之一吧。你可以在自己的博客中记录各种各样的内容，电影影评、旅行日记、编程踩坑经历等等。</p>\n<p>基于此，你可能使用过或正在使用一些流行的工具如 <strong>Hexo</strong>、<strong>Jekyll</strong> 等静态博客网站生成器，又或者是 <strong>Gatsby</strong> 这种新型的 Web 构建工具。不过，你可能在寻找或者期待这样一种工具，可以更便捷地来管理博客和更舒适的编辑内容，于是今天的主角—— <strong>Hve Notes</strong> 诞生了！</p>\n<p>下面奉上介绍给各位喜欢创作的朋友</p>\n<p>👏  欢迎使用 <strong>Hve Notes</strong> ！  </p>\n<p>Github: <a href="https://github.com/hve-notes/hve-notes">Hve Notes</a><br>项目主页: <a href="http://hvenotes.fehey.com/">Hve Notes</a><br>示例网站: <a href="http://fehey.com/">示例网站一</a> <a href="http://hve-notes.github.io">示例网站二</a>  </p>\n<p>✍️  <strong>Hve Notes</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ... </p>\n<h2 id="-">特性👇</h2>\n<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作  </p>\n<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片  </p>\n<p>🏷️  你可以对文章进行标签分组  </p>\n<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单  </p>\n<p>💻  你可以在 <strong>𝖶𝗂𝗇𝖽𝗈𝗐𝗌</strong> 或 <strong>𝖬𝖺𝖼𝖮𝖲</strong> 设备上使用此客户端  </p>\n<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台  </p>\n<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统  </p>\n<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong>  </p>\n<p>🌁  你可以任意使用应用内默认主题或任意第三方主题  </p>\n<p>🌱 当然 <strong>Hve Notes</strong> 还很年轻，有很多不足，但请相信，它会不停向前🏃</p>\n<p>未来，它一定会成为你离不开的伙伴</p>\n<p>尽情发挥你的才华吧！</p>\n<p>😘 Enjoy~</p>\n<p>目前，<strong>Hve Notes</strong> 已经更新到了 v0.7.0 版本，基本已经可以满足日常使用。当然还有很大的成长空间，例如文章和标签的 <code>slug</code> 格式定制和可编辑，个性化的页面增加与配置，赋予用户更强的扩展能力，更丰富的主题等等。</p>\n<p>在此，也欢迎感兴趣的朋友可以加入我们，提出建议或共同开发，也欢迎加入我们的 <a href="https://t.me/joinchat/IDY0ahRqb8NPodv95BNpBg">Telegram 群组</a></p>\n<p>如果您觉得此项目还不错，欢迎 <a href="https://github.com/hve-notes/hve-notes">Star</a> 支持作者，也欢迎体验之后提出您最宝贵的建议到 <a href="https://github.com/hve-notes/hve-notes/issues">Issue</a></p>\n',
+       fileName: 'yu-jian-chuang-zuo-yu-jian-hve-notes',
+       abstract: '<p>作为一个技术人，你是否喜欢创作，或是怀念过往又或是畅想未来，或是总结技术又或是记录生活？</p>\n',
+       title: '遇见创作，遇见Hve Notes',
+       tags: [Array],
+       date: '2019-01-14 16:00:00',
+       dateFormat: '2019-01-14',
+       feature:
+        'https://fehey.com/post-images/yu-jian-chuang-zuo-yu-jian-hve-notes.png',
+       link:
+        '/Users/haoeryou/Documents/hve-notes/output/post/yu-jian-chuang-zuo-yu-jian-hve-notes/index.html',
+       hideInList: false },
+     { content:
+        '<p>📃又到了一年一度的<strong>年终总结</strong>，这是参加工作的第一个完整年。</p>\n<!-- more -->\n\n<p>🥺这一年总体来说，<strong>滑水较多</strong>，产出较少，尤其是文字方面，可怜巴巴。读过不少文章，写过不少代码，需提升、待吸收的知识一把一把。</p>\n<p>🏫毕业快两年了，这一年多来遇到了许多贵人，使我成长了很多，对事情的看法和对世界的认知也清晰了很多。单是技术方面也不像从前那么迷茫与焦虑，学会了循序渐进，稳扎稳打，时间总会给准备的人最好的答案。</p>\n<p><em>说说这一年的经历吧，除了在公司做的工作以外，当然公司的工作也锻炼了很多其他的东西。</em></p>\n<p>⏱有一部分时间里，在思考使用 Vue.js 在工程化的最佳实践，如何组织前端项目代码，如何组织组件，如何抽象，如何管理依赖等等。</p>\n<p>⏱有一部分时间里，写了一个“烂尾”的 Vue.js 组件库：<a href="https://github.com/EryouHao/live">Live UI</a>，实现了<strong>14</strong>个常用的 UI 组件，虽然部分组件可能存在 bug，但是每实现一个新组件，总能学到一些新东西也是极好的。对 Vue.js 的理解又加深了一些，能够思考如何提供 API，哪些 API 是这个组件最需要提供给用户使用的过程也是不错的。</p>\n<p>⏱有一部分时间里，写了一个 VSCode 浅色主题：<a href="https://github.com/EryouHao/brackets-light-pro">Brackets Light Pro</a>，当然这个 Repo 始于 2017，截止此文写作时已经有了 <strong>12,456 installs</strong> 和 <strong>28,544 downloads</strong>，很早就把主力编辑器换成了 VSCode，自己又比较偏好浅色主题，尤其是我大部分编程时间都在白天，所以就写了这样一个主题，希望你也喜欢「比心」。</p>\n<p>⏱有一部分时间里，写了一个静态博客写作客户端：<a href="https://github.com/hve-notes/hve-notes">Hve Notes</a> 。是的，这篇文章的创作即使用此工具完成。这是一个可以使用 <code>Markdown</code> 来进行记录生活、心情、知识、笔记、创意的跨平台（Windows &amp; MacOS）工具。这大概是目前为止对我来说实现程度最高的一个开源项目吧，写代码、写文档、设计 Logo、打包发版、写主题，处理反馈等等，在一个编程新手的阶段来体验与尝试自己感兴趣的东西，也算是一种幸福吧。</p>\n<p>⏱有一部分时间里，学习和实践新技术。使用 <code>TypeScript</code> + <code>Egg</code>  + <code>Vue</code> + <code>TypeORM</code> + <code>PostgreSQL</code> + <code>Puppeteer</code> 写了一个小全栈项目。从新知识的学习到写点实际的东西，从开发到部署上线，整套开发体验还算不错，对于工程化的实践又多了一些。另外将自己的获取和学习主渠道更多地向国外倾斜，Twitter，Youtube，Medium，还有其他地一些网站、个博等等，蛮不错。</p>\n<p>⏱有一部分时间里，关注与练习设计。在推特上关注了 <strong>Steve Schoger</strong>，个人觉得他的一些 Tips 很简单也很实用。可能在这之后或之前，更加关心前端Web 设计。尤其是在一些 UI 设计并不重的场合，比如一些内部使用的中后台系统，去尝试和融入自己的一点点学习，甚至将 UI 设计师的设计稿进行二次设计然后进行“设计交流”（好像最后气氛变成了投票和战队，这不是我想要的），这些尝试个人感觉还是蛮好的，不断试错，不断提升。</p>\n<p><em>接下来说说，对于刚刚到来的 2019 的一些想法。</em></p>\n<p>🧐保持不断学习，保持好奇心。<br>✍️用心做好每一个个人项目，比如 <a href="https://github.com/hve-notes/hve-notes">Hve Notes</a><br>🗞努力提升英语水平，能够在第一次英文介绍自己的时候，说出 「Vue点儿JS」还是有点尴尬😅<br>💻更新自己的技术栈<br>👻结交新朋友<br>💏照顾好亲人和女票<br>🍲争取做好每一道菜，像写好每一行代码一样<br>🏃运动</p>\n',
+       fileName: '2018-nian-zhong-zong-jie',
+       abstract: '<p>📃又到了一年一度的<strong>年终总结</strong>，这是参加工作的第一个完整年。</p>\n',
+       title: '2018 年终总结',
+       tags: [Array],
+       date: '2019-01-14 00:00:00',
+       dateFormat: '2019-01-14',
+       feature:
+        'https://fehey.com/post-images/yu-jian-chuang-zuo-yu-jian-hve-notes.png',
+       link:
+        '/Users/haoeryou/Documents/hve-notes/output/post/2018-nian-zhong-zong-jie/index.html',
+       hideInList: false },
+     { content:
+        '<p>铛铛铛，喜大普奔，Hve Notes 主页上线啦！  </p>\n<!-- more -->\n\n<p>📢小二，上链接<br><a href="http://hvenotes.fehey.com/">Hve Notes</a></p>\n<p>主页网站 用了 <a href="https://vuepress.vuejs.org/zh/">Vuepress</a> 快速搭建，搭配了 <a href="http://fehey.com/live/">Live UI</a> 一起食用</p>\n<p>你可以再这里找到文档，快速上手 Hve Notes</p>\n<p>未来，即将丰富的主题、备份同步等功能都将更新在文档中</p>\n<p>😘 Enjoy~</p>\n',
+       fileName: 'hve-notes-zhu-ye-shang-xian-la',
+       abstract: '<p>铛铛铛，喜大普奔，Hve Notes 主页上线啦！  </p>\n',
+       title: 'Hve Notes 主页上线啦',
+       tags: [Array],
+       date: '2019-01-01 08:00:00',
+       dateFormat: '2019-01-01',
+       feature: '',
+       link:
+        '/Users/haoeryou/Documents/hve-notes/output/post/hve-notes-zhu-ye-shang-xian-la/index.html',
+       hideInList: false },
+     { content:
+        '<p>👏 欢迎使用 <strong>Hve</strong> ！  </p>\n<!-- more -->\n\n<p>🌈 <strong>Hve</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ... </p>\n<h4 id="-">在这里👇</h4>\n<p>📝  你可以使用最酷的 <code>Markdown</code> 语法，进行快速创作<br>🌉  你可以在文章的任意位置插入图片和文章封面图<br>🏷️  你可以对文章进行标签分组<br>📋 你可以自定义菜单，甚至可以创建外部链接菜单</p>\n<p>🌱 当然 <strong>Hve</strong> 还很年轻，有很多不足，但请相信，它会不停向前🏃</p>\n<p>未来，它一定会成为你离不开的伙伴</p>\n<p>尽情发挥你的才华吧！</p>\n<p>😘 Enjoy~</p>\n',
+       fileName: 'hello-hve',
+       abstract: '<p>👏 欢迎使用 <strong>Hve</strong> ！  </p>\n',
+       title: 'Hello Hve Notes',
+       tags: [Array],
+       date: '2018-12-12 00:00:00',
+       dateFormat: '2018-12-12',
+       feature:
+        'https://fehey.com/post-images/yu-jian-chuang-zuo-yu-jian-hve-notes.png',
+       link:
+        '/Users/haoeryou/Documents/hve-notes/output/post/hello-hve/index.html',
+       hideInList: false } ]
+  var pagination = { prev: '', next: '' }
+  var themeConfig =
+   { archivesPageSize: 50,
+     dateFormat: 'YYYY-MM-DD',
+     footerInfo:
+      'Powered by <a href="https://github.com/hve-notes/hve-notes" target="_blank" style="color: #1067de;">Hve Notes</a>',
+     postPageSize: 10,
+     postUrlFormat: 'SLUG',
+     showFeatureImage: true,
+     siteDescription: '温故而知新',
+     siteName: 'Hve Notes',
+     tagUrlFormat: 'SHORT_ID',
+     themeName: 'notes',
+     domain: '/Users/haoeryou/Documents/hve-notes/output' }
+%>
 
 <!DOCTYPE html>
 <html>
   <head>
-    <%- include('./_blocks/head') %>
+    <%- include('./_blocks/head', { siteTitle: `${tag.name} | ${themeConfig.siteName}` }) %>
   </head>
   <body>
     <div id="app" class="main">
-      <%- include('./_blocks/header') %>
 
-      <div class="content-container">
+      <%- include('./_blocks/sidebar') %>
 
-        <div class="current-tag-container">
-          <h2 class="title">
-            <i class="icon icon-pricetags-outline"></i> 年终总结
-          </h2> 
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <h2 class="current-tag">标签: <%= tag.name %></h2>
+          <% posts.forEach(function(post) { %>
+            <article class="post-item">
+              <div class="left">
+                <a href="<%= post.link %>">
+                  <h2 class="post-title"><%= post.title %></h2>
+                </a>
+                <div class="post-date">
+                  <%= post.dateFormat %>
+                </div>
+                <div class="post-abstract">
+                  <%- post.abstract %>
+                </div>
+              </div>
+              <% if (themeConfig.showFeatureImage && post.feature) { %>
+                <a class="right" href="<%= post.link %>">
+                  <div class="feature-container" style="background-image: url('<%= post.feature %>')">
+                  </div>
+                </a>
+              <% } %>
+            </article>
+          <% }); %>
+
+          <div class="pagination-container">
+            <% if (!pagination.prev) { %>
+              <a href="<%= pagination.prev %>" class="prev"><i class="icon-arrow-ios-back-outline"></i> 上一页</a>
+            <% } %>
+            <% if (!pagination.next) { %>
+              <a href="<%= pagination.next %>" class="next">下一页 <i class="icon-arrow-ios-forward-outline"></i></a>
+            <% } %>
+          </div>
         </div>
-
-        <%- include('./_blocks/post-list') %>
-
       </div>
-
-      <%- include('./_blocks/footer') %>
-
     </div>
+
     <%- include('./_blocks/scripts') %>
   </body>
 </html>

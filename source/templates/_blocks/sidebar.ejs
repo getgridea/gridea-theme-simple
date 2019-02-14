@@ -1,0 +1,64 @@
+<%
+  // 模拟数据
+  var menus =
+   [ { link: 'http://fehey.com', name: '首页', openType: 'Internal' },
+     { link: 'http://fehey.com/archives',
+       name: '归档',
+       openType: 'Internal' },
+     { link: 'http://fehey.com/tags',
+       name: '标签',
+       openType: 'Internal' },
+     { link: 'http://fehey.com/post/about/',
+       name: '关于',
+       openType: 'Internal' },
+     { link: 'https://github.com/EryouHao',
+       name: 'Github',
+       openType: 'External' } ]
+       var themeConfig =
+       { archivesPageSize: 50,
+         dateFormat: 'YYYY-MM-DD',
+         footerInfo:
+          'Powered by <a href="https://github.com/hve-notes/hve-notes" target="_blank" style="color: #f1f3f5;">Hve Notes</a>',
+         postPageSize: 10,
+         postUrlFormat: 'SLUG',
+         showFeatureImage: true,
+         siteDescription: '温故而知新',
+         siteName: 'Hve Notes',
+         tagUrlFormat: 'SHORT_ID',
+         themeName: 'notes',
+         domain: '/Users/haoeryou/Documents/hve-notes/output' }
+%>
+<div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="#">
+        <img src="/frontend/media/logo.png" class="site-logo">
+        <h1 class="site-title">海岛心hey</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      <% menus.forEach(function(menu) { %>
+        <% if (menu.openType === 'External') { %>
+          <a href="<%= menu.link %>" class="site-nav" target="_blank">
+            <%= menu.name %>
+          </a>
+        <% } else { %>
+          <a href="<%= menu.link %>" class="site-nav">
+            <%= menu.name %>
+          </a>
+        <% } %>
+      <% }); %>
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="site-description">
+      <%- themeConfig.siteDescription %>
+    </div>
+    <div class="site-footer">
+      <%- themeConfig.footerInfo %>
+    </div>
+  </div>
+</div>
