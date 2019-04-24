@@ -1,20 +1,26 @@
+# Gridea 主题 Notes
 
-# hve-notes-theme-starter
+一款漂亮的 Gridea 主题
 
-**Hve Notes** 主题开发样板
+<div align="center">
+  <img src="theme.jpg">
+</div>
 
-主题开发文档：[文档 - 主题开发](http://hvenotes.fehey.com/docs/theme.html)
+**项目各文件夹内已写 README，开发主题前敬请阅读！**
 
-`source` 文件夹里进行开发，开发完成后，根据主题变量文档，创建一个主题文件夹，例如项目中的 `fly` 文件夹，进行变量替换，最后将主题文件夹复制到应用的 `thems` 文件夹即可
+`/assets`、`/templates` 必须，Gridea 使用主题时必须文件夹  
+`config.json` 可选，主题信息和自定义配置字段信息  
+`style-override.js` 可选，根据自定义配置信息生成 css 方法文件  
+`/images` 文件夹仅为预览渲染 avatar 所用  
 
-## Gulp commands
+Mock 数据来源：https://github.com/getgridea/mock-json
 
-```bash
-gulp       // Run build & watch & browserSync
-# gulp build
-# gulp build --prod
-```
+Gridea 主题开发支持 less，若不熟悉 less 语法，尽可使用 css 语法编写，只不过文件名需要保持 `main.less`
 
-如果你有好的主题开发实践，欢迎 PR，共同调整此样板
+网页链接仅为预览效果所用
 
-Enjoy～
+主题开发文档：https://gridea.dev/docs/theme.html
+
+欢迎开发 Gridea 主题！
+
+😘 Enjoy~

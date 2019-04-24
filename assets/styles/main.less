@@ -1,6 +1,7 @@
 @import "_core/colors";
 @import "_core/base";
 @import "_core/a11y-dark";
+@import "_core/katex";
 
 body {
   background: @oc-gray-0;
@@ -20,7 +21,7 @@ a {
   background-color: #7c8280;
   background-size: cover;
   background-position: center;
-  background-image: url('/frontend/media/images/sidebar-bg.jpg');
+  background-image: url('../media/images/sidebar-bg.jpg');
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
@@ -60,6 +61,9 @@ a {
     font-size: 12px;
     .site-description {
       padding: 16px 0;
+    }
+    a {
+      color: #fff;
     }
   }
 }
@@ -458,5 +462,13 @@ a {
     &:hover {
       transform: translateY(0px);
     }
+  }
+}
+
+.social-container {
+  .social-link {
+    color: #dee2e6;
+    font-size: 16px;
+    margin: 4px 8px;
   }
 }
