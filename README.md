@@ -1,10 +1,16 @@
-# Gridea 主题 Notes
+# Gridea 主题 Simple
 
 一款漂亮的 Gridea 主题
 
 <div align="center">
   <img src="theme.jpg">
 </div>
+
+## 开发
+```
+$ npm install
+$ npm run dev
+```
 
 **项目各文件夹内已写 README，开发主题前敬请阅读！**
 
