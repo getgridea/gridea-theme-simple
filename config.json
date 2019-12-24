@@ -38,6 +38,20 @@
       "note": "颜色字符串:（如：#EEEEEE、rgba(255, 255, 255, 0.9)）"
     },
     {
+      "name": "renderKaTeX",
+      "label": "是否渲染 KaTeX 公式",
+      "group": "渲染",
+      "value": false,
+      "type": "switch"
+    },
+    {
+      "name": "renderCode",
+      "label": "是否渲染代码高亮",
+      "group": "渲染",
+      "value": false,
+      "type": "switch"
+    },
+    {
       "name": "github",
       "label": "Github",
       "group": "社交",
