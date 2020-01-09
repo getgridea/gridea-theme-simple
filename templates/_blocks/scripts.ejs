@@ -1,4 +1,4 @@
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js"></script>
 <script type="application/javascript">
 
 AOS.init();
@@ -13,7 +13,7 @@ var app = new Vue({
 </script>
 
 <% if (site.customConfig.renderCode) { %>
-  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/highlight.js@9.17.1/lib/highlight.js"></script>
   <script>
     hljs.initHighlightingOnLoad()
   </script>
@@ -22,7 +22,7 @@ var app = new Vue({
 <% if (typeof commentSetting !== 'undefined' && commentSetting.showComment) { %>
 
   <% if (commentSetting.commentPlatform === 'gitalk') { %>
-    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.js"></script>
     <script>
 
       var gitalk = new Gitalk({
@@ -41,7 +41,7 @@ var app = new Vue({
   <% } %>
 
   <% if (commentSetting.commentPlatform === 'disqus') { %>
-    <script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/disqusjs@1.2.6/dist/disqus.min.js"></script>
     <script>
 
     var options = {
