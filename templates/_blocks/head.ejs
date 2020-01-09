@@ -8,6 +8,10 @@
 <link rel="shortcut icon" href="<%= themeConfig.domain %>/favicon.ico?v=<%= site.utils.now %>">
 <link rel="stylesheet" href="<%= themeConfig.domain %>/styles/main.css">
 
+<% if (site.customConfig.renderKaTeX) { %>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css">
+<% } %>
+
 <% if (typeof commentSetting !== 'undefined' && commentSetting.showComment) { %>
   <% if (commentSetting.commentPlatform === 'gitalk') { %>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.css" />
