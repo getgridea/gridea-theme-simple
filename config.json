@@ -92,6 +92,14 @@
       "note": "链接地址"
     },
     {
+      "name": "linkedin",
+      "label": "Linkedin",
+      "group": "社交",
+      "value": "",
+      "type": "input",
+      "note": "链接地址"
+    },
+    {
       "name": "customCss",
       "label": "自定义CSS",
       "group": "自定义样式",

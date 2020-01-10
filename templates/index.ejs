@@ -3,9 +3,6 @@
   <head>
     <%- include('./_blocks/head', { siteTitle: themeConfig.siteName }) %>
     <meta name="description" content="<%= themeConfig.siteDescription %>">
-    <% if (site.customConfig.renderKaTeX) { %>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
-    <% } %>
   </head>
   <body>
     <div id="app" class="main">

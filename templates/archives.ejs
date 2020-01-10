@@ -16,7 +16,7 @@
           <h2 class="archives-title">文章归档</h2>
           <div class="archives-container">
             <% years.forEach(function(year) { %>
-              <h2 class="year" data-aos="fade-in" data-aos-delay="500"><%- year %></h2>
+              <h2 class="year" data-aos="fade-up"><%- year %></h2>
               <% posts.forEach(function(post) { %>
                 <%if (post.date.indexOf(year) !== -1) { %>
                   <article class="post">
